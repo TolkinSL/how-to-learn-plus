@@ -145,18 +145,31 @@
   flex-direction: column;
   justify-content: center;
   width: 80%;
-  padding-top: 100px;
 }
 
 .section-title {
-  //text-align: center;
+  margin: 0 auto;
+  padding-top: 100px;
+  width: 60%;
+  text-align: center;
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: 600;
+
 }
 
 .section-subtitle {
-  //text-align: center;
+  margin: 20px auto 0;
+  width: 60%;
+  text-align: center;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+
 }
 
 .cards {
+  margin: 0;
   display: flex;
   flex-wrap: wrap;
 }
@@ -164,6 +177,7 @@
 .cards__item {
   width: 240px;
   margin: 60px 100px 0 0;
+  list-style-type: none;
 }
 
 .cards__image {
@@ -183,4 +197,44 @@
   display: flex;
   justify-content: center;
   padding-top: 160px;
+}
+
+.feynman {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  min-height: 890px;
+  background-image: url('../images/feynman.png');
+  background-repeat: no-repeat;
+  background-size: 867px 637px;
+  background-position: bottom left;
+  z-index: 1;
+}
+
+.feynman__title {
+  margin: 0;
+  padding-top: 100px;
+  width: 648px;
+  line-height: 1.15;
+  font-size: 120px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.feynman__subtitle {
+  margin: 70px 0 0;
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+  text-align: center;
+}
+
+.feynman__link {
+  position: absolute;
+  top: 50%;
+  right: 48px;
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
 }
